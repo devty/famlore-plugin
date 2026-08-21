@@ -1,0 +1,13 @@
+{
+  "name": "famlore",
+  "owner": { "name": "Famlore" },
+  "description": "Claude plugins published by Famlore.",
+  "plugins": [
+    {
+      "name": "famlore",
+      "source": "./",
+      "description": "A memory for the one thing you can't stop thinking about — and the field assignments that come out of it.",
+      "category": "productivity"
+    }
+  ]
+}
