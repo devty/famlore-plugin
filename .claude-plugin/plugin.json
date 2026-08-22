@@ -1,8 +1,8 @@
 {
   "name": "famlore",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A memory for the one thing you can't stop thinking about — and the field assignments that come out of it.",
   "author": { "name": "Famlore" },
   "homepage": "https://famlore-psi.vercel.app",
-  "keywords": ["curiosity", "memory", "companion", "quests"]
+  "keywords": ["curiosity", "memory", "companion", "quests", "rooms"]
 }
