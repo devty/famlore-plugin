@@ -2,7 +2,7 @@
   "mcpServers": {
     "famlore": {
       "type": "http",
-      "url": "https://famlore-psi.vercel.app/mcp"
+      "url": "https://famlore.app/mcp"
     }
   }
 }
