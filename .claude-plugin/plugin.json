@@ -1,8 +1,16 @@
 {
   "name": "famlore",
-  "version": "0.6.0",
+  "version": "0.8.3",
   "description": "A memory for the one thing you can't stop thinking about — and the field assignments that come out of it.",
-  "author": { "name": "Famlore" },
+  "author": {
+    "name": "Famlore"
+  },
   "homepage": "https://famlore.app",
-  "keywords": ["curiosity", "memory", "companion", "quests", "rooms"]
+  "keywords": [
+    "curiosity",
+    "memory",
+    "companion",
+    "quests",
+    "rooms"
+  ]
 }

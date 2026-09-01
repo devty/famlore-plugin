@@ -23,6 +23,14 @@ time, which removes your entry from that room immediately.
 
 ## Install
 
+This plugin is the Claude Code route. **In Claude Desktop or claude.ai there is
+no plugin to install** — add `https://famlore.app/mcp` as a custom connector
+instead. Same browser approval, same absence of a key, same tools; what you give
+up is the Curator skill below, which only a plugin can carry. Neither route is a
+lesser one, and most people take the connector.
+
+In Claude Code:
+
 ```bash
 claude plugin marketplace add devty/famlore-plugin
 claude plugin install famlore@famlore

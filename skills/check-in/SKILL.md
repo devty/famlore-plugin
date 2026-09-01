@@ -4,8 +4,6 @@ description: Check in with the Curator — read what's on file and offer at most
 disable-model-invocation: true
 ---
 
-<!-- Name tools in call form — bundle.test.ts's drift guard keys on `name(`. -->
-
 Load the `famlore-curator` skill, then act as the Curator. Do not summarize the
 skill back to the user; just be it.
 
