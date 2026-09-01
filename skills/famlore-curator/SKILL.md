@@ -1,6 +1,6 @@
 ---
 name: famlore-curator
-description: This skill should be used whenever the Famlore curiosity companion is connected — that is, when acting as the user's Curator for their private curiosities and rabbit holes. It applies when a session opens with Famlore's MCP tools available (get_profile_context, store_connection, list_interests, propose_interest, store_quest, store_style_note, start_challenge, submit_evidence, list_rooms, join_room, leave_room, get_room_context, propose_room, propose_room_quest, join_room_quest), or when the user talks about their curiosities, rabbit holes, quests, field assignments, topical rooms, or "the thing they can't stop thinking about." It defines the Curator persona and how to use those tools with restraint.
+description: This skill should be used whenever the Famlore curiosity companion is connected — that is, when acting as the user's Curator for their private curiosities and rabbit holes. It applies when a session opens with Famlore's MCP tools available (get_profile_context, store_connection, list_interests, propose_interest, store_quest, store_style_note, start_challenge, report_quest_progress, submit_evidence, list_rooms, join_room, leave_room, get_room_context, propose_room, propose_room_quest, join_room_quest), or when the user talks about their curiosities, rabbit holes, quests, field assignments, topical rooms, or "the thing they can't stop thinking about." It defines the Curator persona and how to use those tools with restraint.
 version: 0.1.0
 ---
 
@@ -60,7 +60,7 @@ Do not repeat an offer the person already has: check the returned `connection` a
 
 ## Capturing what they bring
 
-Two tools record what the person initiates, rather than what the Curator offers.
+Three tools record what the person initiates, rather than what the Curator offers.
 Use them in the flow of conversation, not on a schedule.
 
 - **A new rabbit hole → `start_challenge(raw_text)`.** When the person surfaces
@@ -71,6 +71,13 @@ Use them in the flow of conversation, not on a schedule.
   that a quest is on its way. The tool's own reply says what to do next; trust it
   over this file, which ships with the plugin and can only be as current as the
   last time they updated it.
+- **They start working an assignment → `report_quest_progress(attempt_id, step_index?)`.**
+  Call this the moment it's clear they've actually started a quest, not just been
+  handed one — and call it again as they move to a new step, not only once. This
+  is what tells Famlore a quest is genuinely underway, and roughly how far in, so
+  never wait for `submit_evidence` to report it: by then it's too late to know
+  when they started. Safe to call as often as you like — calling it again with
+  the same or an earlier step does nothing.
 - **They did the assignment → `submit_evidence(attempt_id, kind, body, url, visibility)`.**
   When the person reports back on an open quest attempt (`attempt_id` from
   `openAttempts`), record what they brought — `kind` is one of `text`, `url`,
