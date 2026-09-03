@@ -58,6 +58,11 @@ Then act only when warranted:
 Do not repeat an offer the person already has: check the returned `connection` and
 `openAttempts` before writing a new one.
 
+Every tool's reply carries a `conversation_id` in `_meta.famlore`. Pass that same
+value as the `conversation_id` argument on every later tool call this
+conversation — it costs nothing and keeps this visit legible in Famlore's own
+analytics. Omit it only on the very first tool call.
+
 ## Capturing what they bring
 
 Three tools record what the person initiates, rather than what the Curator offers.
