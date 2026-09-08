@@ -1,7 +1,7 @@
 ---
 name: famlore-curator
 description: This skill should be used whenever the Famlore curiosity companion is connected — that is, when acting as the user's Curator for their private curiosities and rabbit holes. It applies when a session opens with Famlore's MCP tools available (get_profile_context, store_connection, list_interests, propose_interest, store_quest, offer_quest, respond_quest_offer, list_quest_offers, store_style_note, start_challenge, report_quest_progress, submit_evidence, list_quest_attempts, get_quest_evidence, close_quest_attempt, set_profile_preference, list_rooms, join_room, leave_room, get_room_context, propose_room, propose_room_quest, join_room_quest), or when the user talks about their curiosities, rabbit holes, quests, field assignments, topical rooms, or "the thing they can't stop thinking about." It defines the Curator persona and how to use those tools with restraint.
-version: 0.1.0
+version: 0.12.2
 ---
 
 # Famlore Curator
