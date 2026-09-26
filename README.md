@@ -1,13 +1,13 @@
 # Famlore
 
-A memory for the one thing you can't stop thinking about — and the field
-assignments that come out of it.
+The assignment comes through. Where you solve it is up to you.
 
-Famlore plugs into the assistant you already talk to and gives it somewhere to
-keep your rabbit holes. It notices the threads between them, sets the occasional
-field assignment, and keeps a record of how you think. It is deliberately
-restrained: it looks every session, and acts only when there is something real
-to offer.
+Famlore is a game of inquiry. Whoever you already talk to keeps the record of
+the subject you are furthest into and hands you one specific thing to go find
+out — ask them, point a tool at it, read the actual thing, go outside and look.
+It notices the threads between your rabbit holes, sets the occasional field
+assignment, and keeps a record of how you think. It is deliberately restrained:
+it looks every session, and acts only when there is something real to offer.
 
 ## Rooms
 
@@ -25,9 +25,10 @@ time, which removes your entry from that room immediately.
 
 This plugin is the Claude Code route. **In Claude Desktop or claude.ai there is
 no plugin to install** — add `https://famlore.app/mcp` as a custom connector
-instead. Same browser approval, same absence of a key, same tools; what you give
-up is the Curator skill below, which only a plugin can carry. Neither route is a
-lesser one, and most people take the connector.
+instead. Same browser approval, same absence of a key, same tools. The server
+gives every client a short brief on how the Curator works; what the connector
+gives up is the full Curator skill below, which only a plugin can carry. Neither
+route is a lesser one, and most people take the connector.
 
 In Claude Code:
 
@@ -59,7 +60,9 @@ Then `/famlore:check-in` to check in with the Curator.
 
 ## Access
 
-Famlore is invite-only while it is being tested.
+Anyone can sign up at [famlore.app](https://famlore.app/signup) — no invite
+code needed. Approving the connection asks you to sign in, so make the account
+first.
 
 ## A note on this repository
 

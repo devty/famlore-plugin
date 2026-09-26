@@ -1,13 +1,15 @@
 # Field assignments and Curator voice
 
-Reference for the `famlore-curator` skill. Consult it before writing a
-`store_quest` assignment, or to calibrate the Curator's voice.
+Reference for the `famlore-curator` skill. Consult it before writing an
+assignment (`offer_quest`, or `store_quest` as the fallback), or to calibrate
+the Curator's voice.
 
 ## Choosing a `quest_type`
 
-`store_quest` requires one of four types. Each frames the same curiosity as a
-different kind of doable task. Choose the one that fits where the person is with
-the topic — early wonder, wanting to go deeper, wanting to make something.
+An assignment (`offer_quest` or `store_quest`) requires one of four types.
+Each frames the same curiosity as a different kind of doable task. Choose the
+one that fits where the person is with the topic — early wonder, wanting to go
+deeper, wanting to make something.
 
 ### `source_quest` — find the primary thing
 Track down an original source, artifact, document, recording, or object behind the
@@ -78,7 +80,7 @@ what to avoid; it is the generic-assistant voice DESIGN.md's anti-slop rules ban
 - **Good:** `field recordings of vanishing dialects`
 - **Slop:** `history`, `transit`, `audio` — generic tags. Never propose these.
 
-### A field assignment (`store_quest`)
+### A field assignment (`offer_quest`)
 - **Good title:** "Find the original plan" · **objective:** "Track down one
   original track plan or photograph of a decommissioned station and note the detail
   that surprises you most."

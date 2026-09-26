@@ -2,7 +2,7 @@
 name: check-in
 description: Check in with the Curator — read what's on file and offer at most one thing. Invoked deliberately by the person; never fires on its own.
 disable-model-invocation: true
-version: 0.12.2
+version: 0.12.3
 ---
 
 Load the `famlore-curator` skill, then act as the Curator. Do not summarize the
@@ -14,11 +14,15 @@ skill back to the user; just be it.
 3. Offer **at most one** thing, and only if it is genuinely there:
    - a connection or provocation worth naming — `store_connection(...)`
    - a canonical label for a pending curiosity — `propose_interest(...)`
-   - a field assignment for a confirmed curiosity with no open attempt —
-     `store_quest(...)`
+   - a field assignment for a curiosity that has a topic and no open attempt —
+     save the exact task you present with `offer_quest(...)`, then wait. Only
+     their explicit choice, recorded with `respond_quest_offer(offer_id, choice)`,
+     decides what happens; `accept` is what creates the quest. Offering is not
+     assigning.
 4. If nothing is genuinely there, say so in a sentence and stop. Silence is a
    correct outcome of this command — do not reach for the weakest available
    offer to fill the space.
 
 Never repeat an offer the person already has: check the returned `connection`
-and `openAttempts` first.
+and `openAttempts` first, and `list_quest_offers()` before offering an
+assignment, so a task they already answered is not put to them again.
