@@ -1,0 +1,36 @@
+Famlore Plugin Limited Use License
+
+Copyright (c) 2026 Orchestrately. All rights reserved.
+
+This repository contains the Famlore plugin: its skill files, its MCP server
+configuration, its icon, and its documentation (together, "the Plugin").
+
+1. Grant. You may download, install, and use the Plugin, unmodified, for the
+   sole purpose of connecting an AI client you use to the Famlore service at
+   famlore.app. Your use of the Famlore service itself is governed by the
+   terms and privacy policy published on famlore.app.
+
+2. Restrictions. Except as section 1 allows, you may not copy, modify,
+   adapt, translate, publish, distribute, sublicense, sell, or create
+   derivative works of the Plugin or any part of it, including its skill
+   text, and you may not use the Plugin or any part of it with any service
+   other than Famlore.
+
+3. Ownership. Orchestrately retains all right, title, and interest in the
+   Plugin. No rights are granted except those expressly stated in section 1.
+   The name "Famlore" and the Famlore mark are not licensed under this
+   license.
+
+4. Termination. This license ends automatically if you breach it. When it
+   ends, you must stop using the Plugin and delete your copies.
+
+5. No warranty. THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+6. Limitation of liability. IN NO EVENT SHALL ORCHESTRATELY BE LIABLE FOR ANY
+   CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR
+   OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PLUGIN OR ITS
+   USE.
+
+Questions about this license: https://famlore.app

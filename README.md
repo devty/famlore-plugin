@@ -64,6 +64,31 @@ Anyone can sign up at [famlore.app](https://famlore.app/signup) — no invite
 code needed. Approving the connection asks you to sign in, so make the account
 first.
 
+## What it sends, and where
+
+The plugin runs nothing on your machine. It connects your Claude client to one
+place: Famlore's MCP server at `https://famlore.app/mcp`, over an OAuth
+connection you approve. When the Curator calls a Famlore tool, what goes to
+that server is what the tool is for: the curiosities you describe, the
+assignments you accept, the evidence you submit, and your choices about rooms
+and visibility. Famlore stores it in your account, and nothing else is sent
+anywhere by the plugin.
+
+Famlore records basic analytics about tool calls (which tool, how long it took,
+whether it failed, and a fixed label for what it does), never the words you or
+your AI wrote in the call.
+
+## Privacy
+
+What Famlore stores, how long it keeps it, and how to delete your account:
+[famlore.app/legal/privacy](https://famlore.app/legal/privacy).
+
+## License
+
+Licensed under the Famlore Plugin Limited Use License. You may install and use
+the plugin to connect your AI client to Famlore; it is not open source. See
+[LICENSE](LICENSE).
+
 ## A note on this repository
 
 This is a **published artifact**. It is generated from the private application
