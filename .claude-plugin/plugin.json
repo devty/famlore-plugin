@@ -1,18 +1,22 @@
 {
   "name": "famlore",
-  "version": "0.12.4",
+  "version": "0.12.5",
   "description": "A game of inquiry: it keeps the record of the subject you are furthest into, and hands you one specific thing to go find out.",
   "author": {
     "name": "Famlore"
   },
   "homepage": "https://famlore.app",
+  "repository": "https://github.com/devty/famlore-plugin",
+  "documentationUrl": "https://famlore.app/connect",
+  "supportUrl": "mailto:support@famlore.app",
   "license": "LicenseRef-Famlore-Limited-Use",
   "privacyPolicyUrl": "https://famlore.app/legal/privacy",
   "icon": ".claude-plugin/icon.png",
   "keywords": [
+    "game",
     "curiosity",
-    "memory",
-    "companion",
+    "research",
+    "learning",
     "quests",
     "rooms"
   ]
