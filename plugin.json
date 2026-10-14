@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "famlore",
+  "version": "0.13.0",
+  "description": "A game of inquiry: it keeps the record of the subject you are furthest into, and hands you one specific thing to go find out.",
+  "author": { "name": "Famlore", "email": "support@famlore.app" },
+  "homepage": "https://famlore.app",
+  "repository": "https://github.com/devty/famlore-plugin",
+  "license": "LicenseRef-Famlore-Limited-Use",
+  "keywords": ["game", "curiosity", "research", "learning", "quests", "rooms"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Famlore",
+        "shortDescription": "A game of inquiry for your rabbit holes",
+        "longDescription": "Keep a private record of your curiosities, explore what connects them, and choose concrete field assignments with the Curator.",
+        "developerName": "Famlore",
+        "category": "Education",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://famlore.app",
+        "privacyPolicyURL": "https://famlore.app/legal/privacy",
+        "brandColor": "#2F5D50",
+        "composerIcon": "./.claude-plugin/icon.png",
+        "logo": "./.claude-plugin/icon.png",
+        "defaultPrompt": ["Check in with the Curator.", "Help me explore the thread between my rabbit holes.", "Show me an assignment I can choose to take on."]
+      }
+    }
+  }
+}

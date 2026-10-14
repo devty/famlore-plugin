@@ -2,7 +2,8 @@
 name: check-in
 description: Check in with the Curator — read what's on file and offer at most one thing. Invoked deliberately by the person; never fires on its own.
 disable-model-invocation: true
-version: 0.12.5
+metadata:
+  version: "0.13.0"
 ---
 
 Load the `famlore-curator` skill, then act as the Curator. Do not summarize the
@@ -19,6 +20,8 @@ skill back to the user; just be it.
      their explicit choice, recorded with `respond_quest_offer(offer_id, choice)`,
      decides what happens; `accept` is what creates the quest. Offering is not
      assigning.
+     If `show_quest_offer(offer_id)` is available, use it to show the exact saved
+     draft. Its buttons record choices themselves; do not repeat that write.
 4. If nothing is genuinely there, say so in a sentence and stop. Silence is a
    correct outcome of this command — do not reach for the weakest available
    offer to fill the space.

@@ -23,12 +23,26 @@ time, which removes your entry from that room immediately.
 
 ## Install
 
-This plugin is the Claude Code route. **In Claude Desktop or claude.ai there is
-no plugin to install** — add `https://famlore.app/mcp` as a custom connector
-instead. Same browser approval, same absence of a key, same tools. The server
-gives every client a short brief on how the Curator works; what the connector
-gives up is the full Curator skill below, which only a plugin can carry. Neither
-route is a lesser one, and most people take the connector.
+The bundle carries the full Curator skills for Claude, ChatGPT and Codex.
+In Claude chat or Desktop, install Famlore from [Claude’s plugin directory](https://claude.ai/customize/plugins/id/e8de7fdd-7f24-447a-8458-201db5b0880c%40anthropic-plugin-directory).
+
+In ChatGPT desktop, add this repository as a marketplace with
+`codex plugin marketplace add devty/famlore-plugin`, restart the app, and
+install Famlore from that marketplace. Run setup in a new conversation.
+Local marketplace support varies by surface; see [OpenAI’s packaging guide](https://developers.openai.com/plugins/build/plugins).
+A public ChatGPT directory listing is still to come.
+
+To connect tools directly in ChatGPT, open [Plugins](https://chatgpt.com/plugins),
+choose the plus button, then **Add custom MCP server**, and use
+`https://famlore.app/mcp` with OAuth. This gives you the tools and the short
+Curator brief. Installing the full bundle also brings the skills.
+
+In Codex CLI:
+
+```bash
+codex plugin marketplace add devty/famlore-plugin
+codex plugin add famlore@famlore
+```
 
 In Claude Code:
 
@@ -55,6 +69,9 @@ Then `/famlore:check-in` to check in with the Curator.
   how it uses the tools, including what joining a room does and does not
   expose. The thinking happens in *your* client, which is why the persona ships
   with the plugin rather than living on a server.
+- **`plugin.json` and `mcp.json`** — portable ChatGPT and Codex packaging, with OAuth discovery.
+- **`skills/setup/`** — check the connection and begin with your actual record.
+- **`skills/explore/`** — compare sources or explore an idea with an interactive explanation when your client supports it.
 - **`skills/check-in/`** — `/famlore:check-in`, an invoke-only check-in for when
   you want to ask rather than wait.
 
@@ -66,7 +83,7 @@ first.
 
 ## What it sends, and where
 
-The plugin runs nothing on your machine. It connects your Claude client to one
+The plugin runs nothing on your machine. It connects your connected client to one
 place: Famlore's MCP server at `https://famlore.app/mcp`, over an OAuth
 connection you approve. When the Curator calls a Famlore tool, what goes to
 that server is what the tool is for: the curiosities you describe, the
