@@ -3,12 +3,7 @@
   "mcpServers": {
     "famlore": {
       "type": "streamable-http",
-      "url": "https://famlore.app/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": { "type": "oauth", "client": { "mode": "dcr" } }
-        }
-      }
+      "url": "https://famlore.app/mcp"
     }
   }
 }

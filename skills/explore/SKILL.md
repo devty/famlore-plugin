@@ -2,7 +2,7 @@
 name: explore
 description: Explore a Famlore curiosity, compare its sources, or explain a thread between rabbit holes with an interactive visual when useful. Use for understanding and investigation, not routine check-ins.
 metadata:
-  version: "0.13.0"
+  version: "0.13.1"
 ---
 
 Load the sibling `famlore-curator` skill for voice and consent. Follow the

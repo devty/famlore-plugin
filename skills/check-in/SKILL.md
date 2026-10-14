@@ -3,7 +3,7 @@ name: check-in
 description: Check in with the Curator — read what's on file and offer at most one thing. Invoked deliberately by the person; never fires on its own.
 disable-model-invocation: true
 metadata:
-  version: "0.13.0"
+  version: "0.13.1"
 ---
 
 Load the `famlore-curator` skill, then act as the Curator. Do not summarize the
