@@ -1,12 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "famlore",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "description": "A game of inquiry: it keeps the record of the subject you are furthest into, and hands you one specific thing to go find out.",
   "author": { "name": "Famlore", "email": "support@famlore.app" },
   "homepage": "https://famlore.app",
   "repository": "https://github.com/devty/famlore-plugin",
-  "license": "LicenseRef-Famlore-Limited-Use",
+  "license": "MIT",
   "keywords": ["game", "curiosity", "research", "learning", "quests", "rooms"],
   "extensions": {
     "com.openai": {

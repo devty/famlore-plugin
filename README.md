@@ -102,9 +102,10 @@ What Famlore stores, how long it keeps it, and how to delete your account:
 
 ## License
 
-Licensed under the Famlore Plugin Limited Use License. You may install and use
-the plugin to connect your AI client to Famlore; it is not open source. See
-[LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). The license covers this plugin's files; it does
+not grant use of the Famlore name or mark, and the Famlore service itself is
+governed by the [terms](https://famlore.app/legal/terms) and
+[privacy policy](https://famlore.app/legal/privacy).
 
 ## A note on this repository
 
