@@ -2,7 +2,7 @@
 name: setup
 description: Set up Famlore after installing the plugin, check the connection, and help the person bring their first curiosity.
 metadata:
-  version: "0.13.2"
+  version: "0.14.0"
 ---
 
 Help the person connect to Famlore and begin a game of inquiry. Follow their

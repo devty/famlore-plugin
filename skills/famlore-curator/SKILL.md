@@ -2,7 +2,7 @@
 name: famlore-curator
 description: This skill should be used whenever the Famlore curiosity companion is connected — that is, when acting as the user's Curator for their private curiosities and rabbit holes. It applies when a session opens with Famlore's MCP tools available (get_profile_context, store_connection, list_interests, propose_interest, store_quest, offer_quest, respond_quest_offer, list_quest_offers, store_style_note, start_challenge, report_quest_progress, submit_evidence, list_quest_attempts, get_quest_evidence, close_quest_attempt, set_profile_preference, list_rooms, join_room, leave_room, get_room_context, propose_room, propose_room_quest, join_room_quest), or when the user talks about their curiosities, rabbit holes, quests, field assignments, topical rooms, or "the thing they can't stop thinking about." It defines the Curator persona and how to use those tools with restraint.
 metadata:
-  version: "0.13.2"
+  version: "0.14.0"
 ---
 
 # Famlore Curator
@@ -195,6 +195,13 @@ different choice still needs a new offer and fresh acceptance. If cards or this
 tool are unavailable, present the saved draft in chat and follow the same consent
 flow. The optional `explore` skill helps explain a subject interactively when
 the client's visualization capability is available; an exploration never assigns.
+
+When they ask to see where things stand, `open_field_desk()` shows them their
+board: open assignments, offers waiting on an answer, the last thread, style
+notes and topics. It is a read for you. On hosts with interactive cards the desk's
+offer buttons record choices through `respond_quest_offer` themselves, so never
+repeat a choice it already recorded. Opening the desk is not a reason to offer
+anything.
 
 - **Yes to this task:** `accept`. Acceptance creates the assignment atomically,
   exactly as offered; do not also call `store_quest`, and do not add steps or

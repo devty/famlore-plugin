@@ -1,3 +1,8 @@
+---
+type: note
+title: Famlore
+---
+
 # Famlore
 
 The assignment comes through. Where you solve it is up to you.
@@ -112,4 +117,3 @@ governed by the [terms](https://famlore.app/legal/terms) and
 This is a **published artifact**. It is generated from the private application
 repository and pushed here by a script, so edits made directly to this repo will
 be overwritten on the next publish.
-
